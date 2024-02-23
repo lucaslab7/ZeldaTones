@@ -261,7 +261,7 @@ void setup() {
   strip.show(); 
   delay(50);
   Serial.println("NeoPixel started");
-  strip.setPixelColor(0, strip.Color(250,   0,   0));         //  Set pixel's color (in RAM)
+  strip.setPixelColor(0, strip.Color(150,   0,   0));         //  Set pixel's color (in RAM)
   //strip.show(); 
 
   strip.setPixelColor(1, strip.Color(50,   50,   50));         //  Set pixel's color (in RAM)
