@@ -10,7 +10,7 @@
 #include <Adafruit_NeoPixel.h>
 
 #define NeoPIN D5
-#define NUM_LEDS 3
+#define NUM_LEDS 4
 int brightness = 255;
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, NeoPIN, NEO_RGB + NEO_KHZ800);
 //CRGB leds[NUM_LEDS];
@@ -269,6 +269,9 @@ void setup() {
   
   strip.setPixelColor(2, strip.Color(50,   50,   50));         //  Set pixel's color (in RAM)
   strip.show(); 
+
+  strip.setPixelColor(3, strip.Color(50,   50,   50));         //  Set pixel's color (in RAM)
+  strip.show();
 
   //colorWipe(strip.Color(50,   50,   50), 15); 
 
